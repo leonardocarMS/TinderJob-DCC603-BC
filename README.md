@@ -46,7 +46,8 @@ As empresas podem criar perfis com os seguintes campos:
 ```bash
 py -3 -m venv .venv
 .venv\Scripts\activate
-python -m pip install -r requirements.txt 
+python -m pip install -r requirements.txt
+python main.py
 ```
 
 [Assista ao vídeo no YouTube](https://youtu.be/xEhXnhv9VRk?si=SktP8j6wA8aKKGdW)
