@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Perfil do Desenvolvedor{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <h2>Bem-vindo, {{ dev['name'] }}!</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 mid-section">
+            <h3>Detalhes do Perfil</h3>
+            <p><strong>Nome:</strong> {{ dev['name'] }}</p>
+            <p><strong>E-mail:</strong> {{ dev['email'] }}</p>
+            <p><strong>Celular:</strong> {{ dev['cel'] }}</p>
+            <p><strong>Habilidades:</strong> {{ dev['habilidades'] }}</p>
+            
+            <div class="text-center mt-4">
+                <a href="{{ url_for('dev_login') }}" class="btn btn-secondary mt-3">Sair</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

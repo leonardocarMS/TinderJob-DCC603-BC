@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% block styles %}
+  <!-- Load Bootstrap-Flask CSS here -->
+  {{ bootstrap.load_css() }}
+  <!-- Link to the styles.css here to apply styling to all the child templates.-->
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/styles.css') }}"
+  />
+  {% endblock %}
+
+  <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+  <!-- Cabeçalho que será comum a todas as páginas -->
+  <header class="bg-danger py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-white text-decoration-none">
+        <img src="/static/images/tinder-jobs-logo.png" alt="Logo projeto" width="60" height="auto" class="me-2 logo-header">
+        <span class="fs-4"></span>
+      </a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="{{ url_for('home') }}" class="nav-link px-2 text-white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('dev_login') }}" class="nav-link px-2 text-white">Desenvolvedor</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('emp_login') }}" class="nav-link px-2 text-white">Empresa</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Conteúdo dinâmico das páginas -->
+  <div class="wrapper">
+    {% block content %} {% endblock %}
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-danger text-white mt-5 py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Sobre nós</h5>
+          <p>O Tinder Jobs é uma plataforma para conectar desenvolvedores e empresas em busca de talentos. Junte-se a nós e encontre o emprego dos seus sonhos ou o talento perfeito para sua empresa!</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5>Contate-nos</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope"></i> contato@tinderjob.com</li>
+            <li><i class="fas fa-phone"></i> +55 95 1234-5678</li>
+            <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123, Boa Vista - RR</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 text-center">
+          <p>&copy; 2024 Tinder Jobs. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #c0392b; 
+  color: white;
+  padding: 1rem 0;
+  border-bottom: 3px solid #a93226; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.logo-header {
+  width: 100px; 
+  height: auto; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+header a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header a:hover {
+  color: #ffcccc; 
+}
+
+header .nav-item .nav-link {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  padding-left: 20px;
+}
+
+header .nav-item .nav-link:hover {
+  color: #ffcccc; 
+}
+
+
+#containerHome img {
+  max-width: 50%;
+  padding: 4rem 0 1rem 0;
+}
+
+#containerHome h2 {
+  color: rgb(77, 77, 77);
+}
+
+#containerHome #container-options div {
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#containerHome #container-options div:hover .card {
+  transform: rotateY(10deg) scale(1.08);
+  box-shadow: -11px 13px 9px -4px rgba(0, 0, 0, 0.28);
+}
+
+/* Aplicando efeito 3D no hover */
+#containerHome #container-options .card {
+  height: 400px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#containerHome #container-options .card:hover {
+  transform: rotateX(10deg) rotateY(10deg) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#containerHome a {
+  text-decoration: none;
+}
+
+#optionDev {
+  background: rgb(255, 70, 70); /* Vermelho principal */
+  background: radial-gradient(circle, rgba(255, 99, 99, 1) 0%, rgba(178, 34, 34, 1) 83%); 
+}
+
+#optionEmp {
+  background: rgb(132, 137, 141); /* Cinza principal */
+  background: radial-gradient(circle, rgba(192, 192, 192, 1) 0%, rgba(105, 105, 105, 1) 83%); 
+}
+
+
+#containerHome .card h5 {
+  padding-top: 5rem;
+  font-size: 25px;
+  color: #fff;
+}
+
+#containerHome .card img {
+  padding-top: 1rem;
+  width: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #containerHome .d-flex {
+    flex-wrap: nowrap;
+  }
+
+  #containerHome .card img {
+    padding-top: 1rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  #containerHome .container {
+    width: 100%;
+    height: 84vh;
+  }
+
+  #containerHome .card {
+    height: 300px;
+  }
+
+  #container-options div {
+    padding: 10px;
+  }
+
+  #container-options div:hover .card {
+    transform: scale(1.04);
+  }
+
+  #container-options #divOpcionDev {
+    margin-right: 0;
+  }
+
+  #containerHome img {
+    max-width: 80%;
+    padding: 2rem 0 0.5rem 0;
+  }
+
+  #containerHome .card h5 {
+    padding-top: 4rem;
+    font-size: 20px;
+  }
+
+  #containerHome .card img {
+    padding-top: 1rem;
+    width: 70%;
+  }
+
+}
+
+/*profile*/
+.mid-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #343a40;
+}
+
+p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  color: #343a40;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.container {
+  max-width: 600px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 800px;
+  }
+}
