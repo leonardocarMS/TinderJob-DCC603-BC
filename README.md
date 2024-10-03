@@ -35,10 +35,12 @@ As empresas podem criar perfis com os seguintes campos:
 #### Login de Empresas:
 - Acesso através de e-mail e senha.
 
-### Exibição de Perfis
+### 4. Exibição de Perfis
 
 ### Tecnologias Utilizadas
-- [Tecnologias que serão usadas no projeto, como frontend, backend, banco de dados etc.]
+- Flask
+- Bootstrap
+- SQlite
 
 ### Como Rodar o Projeto
 
