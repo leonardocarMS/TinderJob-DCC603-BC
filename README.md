@@ -4,7 +4,7 @@
 
 # Plataforma de Conexão entre Desenvolvedores e Empresas
 
-Este projeto visa conectar desenvolvedores e empresas por meio de um sistema de curtidas (like) e rejeições (dislike), criando um "match" quando ambas as partes expressam interesse mútuo.
+Este projeto visa conectar desenvolvedores e empresas a partir de um "match", ou seja, quando dois usuários demonstram interesse mútuo.
 
 ## Funcionalidades Principais
 
@@ -43,5 +43,6 @@ As empresas podem criar perfis com os seguintes campos:
 - SQlite
 
 ### Como Rodar o Projeto
+[Assista ao vídeo no YouTube](https://youtu.be/xEhXnhv9VRk?si=SktP8j6wA8aKKGdW)
 
 
